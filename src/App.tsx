@@ -35,7 +35,7 @@ const App = () => {
      
 
      const getTotalItems = (items: CartItemType[]) => 
-      items.reduce((ack:number, item) => ack + item.amount, 0)
+      items.reduce((ack:number, item) => ack + item.amount, 0) // ack = 초기값 & 결과값, item = 현재 값
 
      const handleAddToCart = (clickedItem: CartItemType) => {
        setCartItems(prev => { //prev는 cartItems와 같은 것으로 판단된다.
